@@ -44,7 +44,7 @@ const API_KEY = '2ac2c88b'
 
       // Watch composition api
       watch(() => {
-        const movie_url = `http://www.omdbapi.com/?s=${state.search}&apikey=${API_KEY}`
+        const movie_url = `https://www.omdbapi.com/?s=${state.search}&apikey=${API_KEY}`
         
         fetch(movie_url)
           .then(response => response.json())
